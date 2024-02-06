@@ -15,7 +15,7 @@ module.exports = {
     maxWidth: {
       'minW': '400px', // Use your own custom pixel value
     },
-    maxHeight: {
+    maHeight: {
       'minH': '400px', // Use your own custom pixel value
     },
     extend: {},
