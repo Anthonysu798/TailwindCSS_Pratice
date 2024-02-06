@@ -1,0 +1,6 @@
+RewriteEngine On
+
+# Only apply the rule if the requested filename doesn't exist
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L,QSA]

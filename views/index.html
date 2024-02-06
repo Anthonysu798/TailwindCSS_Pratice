@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Pratice</title>
+    <link rel="stylesheet" href="../src/output.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png">
+</head>
+<body>
+    
+    <style>
+        .cards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative; /* Add this to establish positioning context */
+            overflow: hidden; /* Add this to prevent the pseudo-element from overflowing */
+        }
+        
+        .colxd_1 {
+            background-image: url('https://media.istockphoto.com/id/1771265485/vector/woman-with-targeted-advertising-vector-line.jpg?s=2048x2048&w=is&k=20&c=PVVFjzFAEl8t-QxjFzm3juoWcCZcONSaS9eIRZeahA8=');
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .colxd_1::before {
+            content: '';
+            position: absolute; 
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6); 
+            z-index: 0;
+        }
+        
+        
+        
+        .colxd_2{
+            background-color: #6C22A6;
+            background: url(https://media.istockphoto.com/id/1428571741/vector/metaverse-digital-virtual-reality-technology-wears-vr-glasses-for-future-innovation-and.jpg?s=2048x2048&w=is&k=20&c=jIYwXCjoVvHKcmpl4yuPZfNMX7lew9bfzKUqM44I2Ao=);
+            background-position: center;
+            background-size: cover;
+        }
+        .colxd_2::before {
+            content: '';
+            position: absolute; 
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6); 
+            z-index: 0;
+        }
+        
+        .colxd_3{
+            background-color: #83C0C1;
+            background-image: url(https://media.istockphoto.com/id/1313836968/vector/sick-man-with-high-fever-and-feel-allergy-sitting-under-blanket-on-couch-at-home-male-with.jpg?s=2048x2048&w=is&k=20&c=3Qc2PyUfFwOpCGBqDuzhM9GLjnnMWaLV0sCYs98AEL4=);
+            background-position: center;
+            background-size: cover;
+        }
+        .colxd_3::before {
+            content: '';
+            position: absolute; 
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6); 
+            z-index: 0;
+        }
+        
+        .colxd_4{
+            background-color: #1F2544;
+            background-image: url(https://media.istockphoto.com/id/1201207913/vector/hairdresser.jpg?s=2048x2048&w=is&k=20&c=ECKrhRkVOrSaWMkBoxKdHAmgCcv2NBqkN1Heak3_foQ=);
+            background-position: center;
+            background-size: cover;
+        }
+        .colxd_4::before {
+            content: '';
+            position: absolute; 
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6); 
+            z-index: 0;
+        }
+        
+        .colxd_5{
+            background-color: #FFD0EC;
+            background-image: url(https://media.istockphoto.com/id/1348944316/vector/robot-assistant-concept.jpg?s=2048x2048&w=is&k=20&c=5dlKQNkcXT3Tpy59QdlsKOsHEUBaElY-XDeH9rfKCRg=);
+            background-position: center;
+            background-size: cover;
+        }
+        .colxd_5::before {
+            content: '';
+            position: absolute; 
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6); 
+            z-index: 0;
+        }
+        
+        .colxd_6{
+            background-color: #CDFADB;
+            background-image: url(https://media.istockphoto.com/id/1496292622/vector/elderly-man-in-the-socket-vector-illustration.jpg?s=2048x2048&w=is&k=20&c=4Zf1HD4x6TOs0wSJvH8GtTxX7nGgMU9r_jOyydUU-eI=);
+            background-position: center;
+            background-size: cover;
+        }
+        .colxd_6::before {
+            content: '';
+            position: absolute; 
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6); 
+            z-index: 0;
+        }
+        
+        .colxd_7{
+            background-color: #7F27FF;
+            background-image: url(https://media.istockphoto.com/id/1454356629/vector/breakfast.jpg?s=2048x2048&w=is&k=20&c=eG9TTRunjoOQ49CXlRvh2i5UYrQBERXojqBnT0cLLNo=);
+            background-position: center;
+            background-size: cover;
+        }
+        .colxd_7::before {
+            content: '';
+            position: absolute; 
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6); 
+            z-index: 0;
+        }
+        
+        .colxd_8{
+            background-color: #74E291;
+            background-image: url(https://media.istockphoto.com/id/1174606726/vector/video-chat-with-a-man-breakfast-top-view-concept.jpg?s=2048x2048&w=is&k=20&c=f_gxav4Mrg-uA-xM90IDRZ6KeKsUlapUHTlo3VnoHqg=);
+            background-position: center;
+            background-size: cover;
+        }
+        .colxd_8::before {
+            content: '';
+            position: absolute; 
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6); 
+            z-index: 0;
+        }
+
+        .tailwind{
+            background-color: #6C22A6;
+            color: #fff;
+            background-image: url();
+            background-position: center;
+            background-size: cover;
+            padding: 10px;
+        }
+
+        body
+        {
+            background-color: #FDF0D1;
+        }
+
+    </style>
+    <div class="text-4xl text-center text-blue-600 tailwind">
+        MY TAILWIND CSS LEARNING
+    </div>
+    
+    <div class="continer  grid lg:grid-cols-3 auto-rows-[300px]  md:grid-cols-2 gap-4">
+        <div class="overflow-hidden transition duration-300 ease-in-out hover:scale-95 cards  colxd_1 lg:row-span-2 md:col-span-2"><h1 style="color: #fffafa; z-index: 1; font-size: 60px;">Istock</h1></div>
+
+        <div class="cards overflow-hidden transition duration-300 ease-in-out hover:scale-95 colxd_2 lg:row-span-2"><h1 style="color: #fffafa; z-index: 1; font-size: 60px; ">Istock</h1></div>
+
+        <div class="cards overflow-hidden transition duration-300 ease-in-out hover:scale-95 colxd_3 sm:col-span-2 md:col-span-1 lg:row-span--2"><h1 style="color: #fffafa; z-index: 1; font-size: 60px;">Istock</h1></div>
+
+        <div class="cards overflow-hidden transition duration-300 ease-in-out hover:scale-95 colxd_4 col-span-2"><h1 style="color: #fffafa; z-index: 1; font-size: 60px;">Istock</h1></div>
+
+        <div class="cards overflow-hidden transition duration-300 ease-in-out hover:scale-95 colxd_5 lg:row-span-2"><h1 style="color: #fffafa; z-index: 1; font-size: 60px;">Istock</h1></div>
+
+        <div class="cards overflow-hidden transition duration-300 ease-in-out hover:scale-95 colxd_6 lg:row-span-1"><h1 style="color: #fffafa; z-index: 1; font-size: 60px;">Istock</h1></div>
+        <div class="cards overflow-hidden transition duration-300 ease-in-out hover:scale-95 colxd_7 sm:col-span-2 md:col-span-2 lg:col-span-1 lg:row-span-2"><h1 style="color: #fffafa; z-index: 1; font-size: 60px;">Istock</h1></div>
+        <div class="cards overflow-hidden transition duration-300 ease-in-out hover:scale-95 colxd_8 sm:col-span-2 lg:col-span-1 lg:row-span-1 "><h1 style="color: #fffafa; z-index: 1; font-size: 60px;">Istock</h1></div>
+        
+        
+    </div>
+    
+</body>
+</html>
